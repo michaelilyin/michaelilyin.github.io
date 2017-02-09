@@ -9,9 +9,19 @@
 
     <meta name="description" content="Angular2 Webpack Starter by @gdi2290 from @AngularClass">
 
+    <script>
+        (function(){
+            const redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
     
     <!-- Configured Head Tags  -->
-    <link rel="stylesheet" href="/michaelilyin.github.io/styles/styles.css">
+    <link rel="stylesheet" href="/michaelilyin.github.io/assets/styles.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="/michaelilyin.github.io/assets/icon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/michaelilyin.github.io/assets/icon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/michaelilyin.github.io/assets/icon/apple-icon-72x72.png">
@@ -34,7 +44,7 @@
     <!-- base url -->
     <base href="/">
 
-<script type="text/javascript" src="/michaelilyin.github.io/polyfills.e5209ab3f287e95d0ae2.bundle.js" defer></script><script type="text/javascript" src="/michaelilyin.github.io/vendor.505e1035f1e0a80349bd.bundle.js" defer></script><script type="text/javascript" src="/michaelilyin.github.io/main.aee5556cc96b35e306d0.bundle.js" defer></script></head>
+<script type="text/javascript" src="/michaelilyin.github.io/polyfills.176cfbb7bf0d2ab14b28.bundle.js" defer></script><script type="text/javascript" src="/michaelilyin.github.io/vendor.ac1e333e3ff817aab4d7.bundle.js" defer></script><script type="text/javascript" src="/michaelilyin.github.io/main.79253b3bc2fadea64d49.bundle.js" defer></script></head>
 
 <body>
 <blog-application>Loading AppComponent content here ...</blog-application>
